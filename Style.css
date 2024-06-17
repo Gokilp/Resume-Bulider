@@ -64,7 +64,7 @@ body {
 .navbar-heading h1,
 .navbar-heading h2{
     display: flex;
-    justify-content: center;
+    align-items: start;
   color: #f0deff;
   background-image: -webkit-linear-gradient(
     45deg,
@@ -87,3 +87,9 @@ body {
   font-size: 1.5rem;
 }
 
+/* .imageResume{
+display:flex;
+align-self:end  ;
+  width: 200px;
+  height: 300px;
+} */
