@@ -43,6 +43,7 @@ body {
 .navbar-brand-text .logotext {
   color: rgb(59, 8, 159);
 }
+
 .navbar-menu {
   display: flex;
   gap: 20px;
@@ -59,3 +60,30 @@ body {
 .navbar-menu div:hover {
   color: #a200ff;
 }
+
+.navbar-heading h1,
+.navbar-heading h2{
+    display: flex;
+    justify-content: center;
+  color: #f0deff;
+  background-image: -webkit-linear-gradient(
+    45deg,
+    #f0deff 0%,
+    #f54242 22%,
+    #e852ff 67%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-fill-color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-heading h1 {
+  font-size: 3rem;
+  margin-top: 60px;
+}
+
+.navbar-heading h2 {
+  font-size: 1.5rem;
+}
+
