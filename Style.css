@@ -123,16 +123,12 @@ body {
   }
 }
 
-
-
-
 .button-container {
   display: flex;
   justify-content: center; /* Centers content horizontally in the container */
   align-items: center; /* Centers content vertically in the container */
   /* Optional: Makes the container take the full height of the viewport */
 }
-
 
 .btn-create {
   display: flex;
@@ -143,7 +139,7 @@ body {
   font-size: 16px; /* Text size */
   border-radius: 8px; /* Rounded corners */
   cursor: pointer; /* Pointer cursor on hover */
-   /* Smooth transition for hover effects */
+  /* Smooth transition for hover effects */
 
   /* Gradient text effect */
   background: -webkit-linear-gradient(
@@ -151,11 +147,9 @@ body {
     #750560 44%,
     #985cff 62%,
     #95186e 100%
-
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-color: #666;
   transition: background-color 0.3s, transform 0.2s;
 }
 
@@ -278,4 +272,14 @@ body {
     width: 600px;
     height: 600px;
   }
+}
+
+.resume-image img {
+  margin-top:20px;
+  margin-right: 30px;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  width: 800px;
+  height: 400px;
 }
