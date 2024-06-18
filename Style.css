@@ -290,6 +290,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  flex-wrap: wrap;
 }
 .image-section {
   flex: 1;
@@ -309,16 +310,14 @@ body {
   color: #333;
   margin-bottom: 20px;
 }
-/* Existing paragraph styles */
-
 
 .content-section p  {
   font-size: 16px;
   color: #555;
   line-height: 1.5;
   margin-bottom: 20px;
-  opacity: 0; /* Start hidden */
-  animation: fadeIn 2s ease-in-out forwards; /* Apply the animation */
+  opacity: 0; 
+  animation: fadeIn 2s ease-in-out forwards;
 }
 
 .content-section {
@@ -333,4 +332,41 @@ body {
       opacity: 1;
   }
 }
-</style>
+
+@media (min-width: 600px) {
+  .content-section {
+      flex-direction: row;
+      flex-wrap: nowrap;
+  }
+  
+  .content-section h3 {
+      font-size: 32px;
+  }
+
+  .content-section p {
+      font-size: 14px;
+  }
+}
+
+@media (min-width: 900px) {
+  .content-section {
+      padding: 60px;
+  }
+  
+  .content-section h3 {
+      font-size: 36px;
+  }
+
+  .content-section p {
+      font-size: 16px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
