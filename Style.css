@@ -1,3 +1,17 @@
+:root {
+  --primary-color: #9f57da;
+  --secondary-color: #f54242;
+  --tertiary-color: #e852ff;
+  --text-color: #666;
+  --hover-color: #a200ff;
+  --background-gradient: linear-gradient(
+    45deg,
+    var(--primary-color) 0%,
+    var(--secondary-color) 22%,
+    var(--tertiary-color) 67%
+  );
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -25,7 +39,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #666;
+  color: var(--text-color);
 }
 
 .navbar-logo img {
@@ -53,28 +67,21 @@ body {
   cursor: pointer;
   padding: 10px;
   transition: background-color 0.3s ease;
-  color: #666; /* Light gray color for menu items */
-  font-size: 1em;
+  color: var(--text-color);
 }
 
 .navbar-menu div:hover {
-  color: #a200ff;
+  color: var(--hover-color);
 }
 
 .navbar-heading h1,
 .navbar-heading h2 {
   display: flex;
   align-items: center;
-  color: #f0deff;
-  background-image: -webkit-linear-gradient(
-    45deg,
-    #9f57da 0%,
-    #f54242 22%,
-    #e852ff 67%
-  );
+  color: transparent;
+  background-image: var(--background-gradient);
   background-clip: text;
   -webkit-background-clip: text;
-  text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
 }
 
@@ -95,56 +102,17 @@ body {
   margin-left: 300px;
   width: 600px;
   height: 600px;
-  perspective: 1000px; /* Add perspective to create a 3D effect */
+  perspective: 1000px;
 }
 
 .imageResume img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensure the image covers the div properly */
+  object-fit: cover;
   animation: flipAnimation 3s infinite;
-  backface-visibility: hidden; /* Hide the back face during rotation */
+  backface-visibility: hidden;
 }
 
-.navbar-heading h1
- {
-  display: flex;
-  justify-content: center;
-  font-size: 60px;
-  align-items: center;
-  color: transparent; /* Standard way to make text transparent */
-  background-image: linear-gradient(
-    45deg,
-    #9f57da 0%,
-    #f54242 22%,
-    #e852ff 67%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Correct property for WebKit browsers */
-}
-
-.navbar-heading h2
- {
-  display: flex;
-  font-size: 40px;
-  justify-content: center;
-  align-items: center;
-  margin-left: 90px;
-  color: transparent; /* Standard way to make text transparent */
-  background-image: linear-gradient(
-    45deg,
-    #9f57da 0%,
-    #f54242 22%,
-    #e852ff 67%
-  );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; /* Correct property for WebKit browsers */
-}
-
-
-/* Define the animation */
 @keyframes flipAnimation {
   0%,
   100% {
@@ -155,34 +123,159 @@ body {
   }
 }
 
-.btn-create {
+
+
+
+.button-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #9f57da;
-  padding: 20px;
-}
-.container-create {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  color: #9f57da;
+  justify-content: center; /* Centers content horizontally in the container */
+  align-items: center; /* Centers content vertically in the container */
+  /* Optional: Makes the container take the full height of the viewport */
 }
 
+
 .btn-create {
-  background-color: #d5bceb; 
-  border: none;
-  padding: 20px 25px;
+  display: flex;
+  justify-content: center; /* Centers content horizontally */
+  align-items: center; /* Centers content vertically */
+  padding: 15px 32px; /* Padding around the text */
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+  font-size: 16px; /* Text size */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+   /* Smooth transition for hover effects */
+
+  /* Gradient text effect */
+  background: -webkit-linear-gradient(
+    180deg,
+    #750560 44%,
+    #985cff 62%,
+    #95186e 100%
+
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-color: #666;
+  transition: background-color 0.3s, transform 0.2s;
 }
 
 .btn-create:hover {
-  background-color:green ;
+  background-color: #000000; /* Darker green background on hover */
+  transform: scale(1.05); /* Slightly increase the size on hover */
+}
+@media (max-width: 767px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-logo img {
+    width: 40px;
+    margin-right: 10px;
+  }
+
+  .navbar-brand-text {
+    font-size: 1.2em;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar-heading h1 {
+    font-size: 2rem;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+
+  .navbar-heading h2 {
+    font-size: 1.2rem;
+    margin-left: 10px;
+  }
+
+  .imageResume {
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .navbar-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    width: 45px;
+    margin-right: 12px;
+  }
+
+  .navbar-brand-text {
+    font-size: 1.3em;
+  }
+
+  .navbar-menu {
+    flex-direction: row;
+    gap: 15px;
+  }
+
+  .navbar-heading h1 {
+    font-size: 2.5rem;
+    margin-top: 40px;
+    margin-left: 20px;
+  }
+
+  .navbar-heading h2 {
+    font-size: 1.4rem;
+    margin-left: 20px;
+  }
+
+  .imageResume {
+    margin-left: 0;
+    width: 80%;
+    height: auto;
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .navbar-logo img {
+    width: 50px;
+    margin-right: 14px;
+  }
+
+  .navbar-brand-text {
+    font-size: 1.5em;
+  }
+
+  .navbar-menu {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .navbar-heading h1 {
+    font-size: 3rem;
+    margin-top: 60px;
+    margin-left: 30px;
+  }
+
+  .navbar-heading h2 {
+    font-size: 1.5rem;
+    margin-left: 30px;
+  }
+
+  .imageResume {
+    margin-left: 300px;
+    width: 600px;
+    height: 600px;
+  }
 }
