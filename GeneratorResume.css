@@ -5,7 +5,7 @@ body {
   padding: 0;
 }
 
-navbar {
+.navbar {
   display: flex;
   justify-content: center;
   background-color: whitesmoke;
@@ -66,13 +66,23 @@ header h1 span {
   color: #007bff;
 }
 
-.about-section {
+.about-section,
+.Acheivement-Section,
+.Experience-section,
+.Project-Section,
+.Skill-Section {
   background-color: #ffffff;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  border-radius: 10px;
 }
 
-.about-section h2 {
+.about-section h2,
+.Acheivement-Section h2,
+.Experience-section h2,
+.Project-Section h2,
+.Skill-Section h2 {
   font-size: 20px;
   margin-bottom: 20px;
   display: flex;
@@ -90,14 +100,11 @@ header h1 span {
   font-size: 18px;
   margin-bottom: 5px;
   font-weight: bold;
-  /* display: flex;
-  justify-content: center;
-  align-items:center; */
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
-.form-group input[type="file"] form-group input[type="date"] {
+.form-group input[type="date"] {
   padding: 10px;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -114,65 +121,18 @@ form {
   gap: 20px;
 }
 
-.Acheivement-Section {
+.Acheivement-Section,
+.Experience-section,
+.Project-Section,
+.Skill-Section {
   width: 100%;
-  height: 200px;
-  background-color: white;
 }
 
-.Acheivement-Section h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-radius: 20px;
-  box-shadow: #494949;
-}
-
-.Experience-section {
-  width: 110%;
-  height: 300px;
-  background-color: white;
-}
-
-.Experience-section h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-radius: 20px;
-  box-shadow: #494949;
-}
-.Project-Section{
-  width: 110%;
-  height: 200px;
-  background-color: white;
-}
-.Project-Section h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-radius: 20px;
-  box-shadow: #494949;
-}
-
-.Skill-Section{
-  width: auto;
-  height: 150px;
-  background-color: white;
-
-}
+.Acheivement-Section h2,
+.Experience-section h2,
+.Project-Section h2,
 .Skill-Section h2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  padding-top: 20px;
-  border-radius: 20px;
-  box-shadow: #494949;
+  margin-top: 0;
+  padding-top: 0;
+  border-radius: 10px;
 }
-
