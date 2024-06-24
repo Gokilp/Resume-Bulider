@@ -92,13 +92,12 @@ header h1 span {
   font-weight: bold;
   /* display: flex;
   justify-content: center;
-  align-items:center; */  
+  align-items:center; */
 }
 
 .form-group input[type="text"],
 .form-group input[type="email"],
-.form-group input[type="file"]
-form-group input[type="date"] {
+.form-group input[type="file"] form-group input[type="date"] {
   padding: 10px;
   font-size: 14px;
   border: 1px solid #ccc;
@@ -131,7 +130,7 @@ form {
   box-shadow: #494949;
 }
 
-.Experience-section{
+.Experience-section {
   width: 110%;
   height: 300px;
   background-color: white;
@@ -146,3 +145,34 @@ form {
   border-radius: 20px;
   box-shadow: #494949;
 }
+.Project-Section{
+  width: 110%;
+  height: 200px;
+  background-color: white;
+}
+.Project-Section h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-radius: 20px;
+  box-shadow: #494949;
+}
+
+.Skill-Section{
+  width: auto;
+  height: 150px;
+  background-color: white;
+
+}
+.Skill-Section h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-radius: 20px;
+  box-shadow: #494949;
+}
+
