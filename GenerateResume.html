@@ -1,41 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume Builder</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="form-container">
-        <h2>Create Your Resume</h2>
-        <form action="GenerateResume.html" method="POST">
-            <div class="form-group">
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-            <div class="form-group">
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-            </div>
-            <div class="form-group">
-                <label for="education">Education:</label>
-                <textarea id="education" name="education" required></textarea>
-            </div>
-            <div class="form-group">
-                <label for="experience">Work Experience:</label>
-                <textarea id="experience" name="experience" required></textarea>
-            </div>
-            <div class="form-group">
-                <label for="skills">Skills:</label>
-                <textarea id="skills" name="skills" required></textarea>
-            </div>
-            <button type="submit">Submit Resume</button>
+    <link rel="stylesheet" href="./GeneratorResume.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <a href="#" class="navbar-logo">
+          <img
+            src="/attribute /logo.png"
+            alt="Logo"
+            class="navbar-brand-icon"
+          />
+          <span class="navbar-brand-text"
+            >Resume <span class="logotext">Builder</span></span
+          >
+        </div>
+
+    
+    <div class="container">
+      <section class="about-section">
+        <h2>ABOUT SECTION</h2>
+        <form>
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" placeholder="e.g. Gokil " />
+          </div>
+          <div class="form-group">
+            <label for="middle-name">Middle Name (optional)</label>
+            <input type="text" id="middle-name" placeholder="e.g. Ram" />
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="e.g. Joe" />
+          </div>
+          <div class="form-group">
+            <label for="image">Your Image</label>
+            <input type="file" id="image" />
+          </div>
+          <div class="form-group">
+            <label for="designation">Designation</label>
+            <input
+              type="text"
+              id="designation"
+              placeholder="e.g. Software Engineer"
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input type="text" id="address" placeholder="e.g. Coimbatore" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="e.g. gokilp25@gmail.com"
+            />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone No:</label>
+            <input
+              type="text"
+              id="phone"
+              placeholder="e.g. 456-768-798, 567.654.002"
+            />
+          </div>
+          <div class="form-group">
+            <label for="summary">Summary</label>
+            <input type="text" id="summary" placeholder="e.g. Coder " />
+          </div>
         </form>
+      </section>
+        <div class="Acheivement Section">
+           <h2> Acheivement </h2> 
+           <div class="container">
+            <form>
+                <div class="form-group">
+                    <label for="title"> Title</label>
+                    <input type="text" id="Title" placeholder="Title">
+                    
+    
+    
+    
+                </div>
+                </form>
+           </div>
+          
+
+
+
+        </div>
+
+
+
+
     </div>
-</body>
+  </body>
 </html>
