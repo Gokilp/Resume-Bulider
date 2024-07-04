@@ -136,3 +136,19 @@ form {
   padding-top: 0;
   border-radius: 10px;
 }
+
+.achievement-section {
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+#add-achievement-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
